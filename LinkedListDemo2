@@ -1,0 +1,22 @@
+import java.util.LinkedList;
+public class LinkedListDemo2 {
+    public static void main(String[] args)
+    {
+        LinkedList<Integer> list=new LinkedList<>();
+        list.add(28);
+        list.add(18);
+        list.add(30);
+        list.add(40);
+        list.add(1);
+        System.out.println("Elements of the LinkedList:"+list);
+        System.out.println("Size of the LinkedList:"+list.size());
+        System.out.println("Element at index 3:"+list.get(3));
+        list.addFirst(100);
+        System.out.println("After inserting 100 at first position:"+list);
+        list.addLast(10);
+        System.out.println("Afterinserting 100 at last position:"+list);
+        System.out.println("Peek of the LinkedList:"+list.peek());
+        list.poll();
+        System.out.println(" Afetr Poll of the LinkedList:"+list);
+    }
+}
